@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Layout/Navbar';
 import HeroSection from './components/Hero/HeroSection';
 import TechStackMarquee from './components/Sections/TechStackMarquee';
+import TechGridSection from './components/Sections/TechGridSection';
 import ServicesSection from './components/Sections/ServicesSection';
 import SuccessCases from './components/Sections/SuccessCases';
 import ProcessSection from './components/Sections/ProcessSection';
@@ -18,6 +19,7 @@ const App = () => {
         
         <HeroSection />
         <TechStackMarquee />
+        <TechGridSection />
         <ServicesSection />
         <SuccessCases />
         <ProcessSection />

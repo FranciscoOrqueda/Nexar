@@ -32,11 +32,6 @@ const ProcessSection = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-4 relative">
-          {/* Connecting Line (Desktop) */}
-          <div className="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-[2px] bg-white/10 z-0">
-             <div className="w-full h-full bg-gradient-to-r from-cyan-500/50 to-blue-500/50 origin-left"></div>
-          </div>
-
           {processSteps.map((step, i) => (
             <motion.div
               key={i}
@@ -46,9 +41,15 @@ const ProcessSection = () => {
               transition={{ delay: i * 0.15 }}
               className="relative z-10 flex flex-col items-center md:items-start text-center md:text-left"
             >
-              <div className="w-14 h-14 rounded-full bg-[#0A192F] border border-cyan-500 flex items-center justify-center text-cyan-400 font-bold text-xl mb-6 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+              <div className="relative w-14 h-14 rounded-full bg-[#0A192F] border border-cyan-500 flex items-center justify-center text-cyan-400 font-bold text-xl mb-6 shadow-[0_0_15px_rgba(34,211,238,0.2)] z-10">
                 {step.num}
               </div>
+
+              {/* Connecting Line (Desktop) */}
+              {i < processSteps.length - 1 && (
+                <div className="hidden md:block absolute top-[27px] left-[56px] w-[calc(100%-56px+1rem)] h-[2px] bg-gradient-to-r from-cyan-500/50 to-blue-500/50 z-0"></div>
+              )}
+
               <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
               <p className="text-gray-400 text-sm leading-relaxed md:pr-4">
                 {step.desc}
