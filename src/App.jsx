@@ -13,7 +13,7 @@ const testimoniosData = [
   { id: 1, text: "El equipo de NEXAR entregó un producto que superó completamente nuestras expectativas. Su atención al detalle y capacidad para crear experiencias épicas es inigualable.", name: "María González", role: "CEO, TechVision", color: "from-secondary to-orange-400" },
   { id: 2, text: "Desde que lanzamos la nueva plataforma, nuestras ventas se dispararon. No solo se ve increíble, sino que funciona a la perfección. Totalmente recomendados.", name: "Carlos Rivera", role: "Director de Operaciones, Nova Finanzas", color: "from-cyan-400 to-blue-600" },
   { id: 3, text: "Nunca imaginé que el diseño pudiera impactar tanto en la retención de usuarios. NEXAR entendió nuestra visión y la llevó a otra galaxia.", name: "Laura Méndez", role: "Founder, Nexus Tech", color: "from-purple-400 to-pink-500" },
-  { id: 4, text: "Un servicio de primera categoría. Lograron plasmar la esencia de nuestra marca en un ecosistema digital robusto y escalable.", name: "Andrés Silva", role: "CTO, Global Systems", color: "from-teal-400 to-emerald-500" }
+  { id: 4, text: "holaUn servicio de primera categoría. Lograron plasmar la esencia de nuestra marca en un ecosistema digital robusto y escalable.", name: "Andrés Silva", role: "CTO, Global Systems", color: "from-teal-400 to-emerald-500" }
 ];
 
 const App = () => {
